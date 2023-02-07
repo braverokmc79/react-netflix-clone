@@ -47,7 +47,7 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
                                         src={`https://image.tmdb.org/t/p/original/${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
                                         alt={movie.name}
                                     />
-                                    <span className='movie_name'>{movie.name || movie.title}</span>
+                                    <span className='movie_name'>{movie.name || movie.title} (평점 : {movie.vote_average})</span>
                                 </div>
                             )
 
@@ -68,7 +68,7 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
             {
                 modalOpen &&
 
-                <MovieModal  {...setMovieSelected} setModalOpen={setModalOpen} />
+                <MovieModal  {...movieSelected} isLargeRow={isLargeRow} setModalOpen={setModalOpen} />
             }
 
 

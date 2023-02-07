@@ -56,7 +56,7 @@ const Banner = () => {
             return data.overview.length > 1
         })
 
-        console.log(" results", results);
+        //console.log(" results", results);
 
         //여러 영화 중 영화 하나의 ID 를 가져오기
         const movieId = results[Math.floor(Math.random() * results.length)].id;
