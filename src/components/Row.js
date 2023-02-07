@@ -21,12 +21,10 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
         <section className='row'>
             <h2>{title}</h2>
             <div className='slider'>
-                <div className='slider_arrow-left'>
-                    <span className='arrow'
-                        onClick={() => {
-                            document.getElementById(id).scrollLeft -= window.innerWidth - 80;
-                        }}
-                    >{"<"}</span>
+                <div className='slider_arrow-left' onClick={() => {
+                    document.getElementById(id).scrollLeft -= window.innerWidth - 80;
+                }}>
+                    <span className='arrow' >{"<"}</span>
                 </div>
 
 
@@ -50,13 +48,10 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
                 </div>
 
 
-                <div className='slider_arrow-right'>
-                    <span className='arrow'
-
-                        onClick={() => {
-                            document.getElementById(id).scrollLeft += window.innerWidth - 80;
-                        }}
-                    >{">"}</span>
+                <div className='slider_arrow-right' onClick={() => {
+                    document.getElementById(id).scrollLeft += window.innerWidth - 80;
+                }}>
+                    <span className='arrow'  >{">"}</span>
                 </div>
 
             </div>
