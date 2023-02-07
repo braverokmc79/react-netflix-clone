@@ -14,7 +14,7 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
         setMovies(request.data.results);
     }
 
-    console.log("title : ", movies);
+
 
 
     return (
@@ -22,7 +22,11 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
             <h2>{title}</h2>
             <div className='slider'>
                 <div className='slider_arrow-left'>
-                    <span className='arrow'>{"<"}</span>
+                    <span className='arrow'
+                        onClick={() => {
+                            document.getElementById(id).scrollLeft -= window.innerWidth - 80;
+                        }}
+                    >{"<"}</span>
                 </div>
 
 
@@ -47,11 +51,16 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
 
 
                 <div className='slider_arrow-right'>
-                    <span className='arrow'>{">"}</span>
+                    <span className='arrow'
+
+                        onClick={() => {
+                            document.getElementById(id).scrollLeft += window.innerWidth - 80;
+                        }}
+                    >{">"}</span>
                 </div>
 
             </div>
-        </section>
+        </section >
     );
 
 

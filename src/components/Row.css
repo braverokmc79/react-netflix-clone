@@ -45,7 +45,9 @@ h2 {
 }
 .arrow {
   transition: 400ms all ease-in-out;
+  font-weight: bold;
 }
+
 .arrow:hover {
   transition: 400ms all ease-in-out;
   transform: scale(1.5);
@@ -83,7 +85,7 @@ h2 {
 .row_poster {
   object-fit: contain;
   width: 100%;
-  max-height: 144px;
+  max-height: 240px;
   margin-right: 10px;
   transition: transform 450ms;
   border-radius: 4px;
@@ -93,7 +95,7 @@ h2 {
   transform: scale(1.08);
 }
 .row_posterLarge {
-  max-height: 320px;
+  max-height: 540px;
 }
 .row_posterLarge:hover {
   transform: scale(1.1);
@@ -109,6 +111,7 @@ h2 {
   background: rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
+  
 }
 .row_arrow-right {
   position: absolute;
@@ -127,10 +130,10 @@ h2 {
 }
 @media screen and (min-width: 1200px) {
   .row_poster {
-    max-height: 160px;
+    max-height: 240px;
   }
   .row_posterLarge {
-    max-height: 360px;
+    max-height: 540px;
   }
 }
 @media screen and (max-width: 768px) {
