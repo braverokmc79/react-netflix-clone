@@ -82,7 +82,7 @@ const MovieModal = ({
 
                     {movieKey && <HomeContainer>
                         <Iframe
-                            src={`https://www.youtube.com/embed/${movieKey}?controls=1&autoplay=1&loop=1&mute=0&playlist=${movieKey}`}
+                            src={`https://www.youtube.com/embed/${movieKey}?controls=1&autoplay=1&loop=1&mute=0&playlist=${movieKey}&volume=5`}
                             title="YouTube video player"
                             frameborder="0"
                             allow="autoplay; fullscreen"

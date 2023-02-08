@@ -61,6 +61,7 @@ const FooterLinkContainer = styled.div`
 const FooterLinkTitle = styled.h1`
   color: gray;
   font-size: 17px;
+  text-align:center;
 `;
 
 const FooterLinkContent = styled.div`

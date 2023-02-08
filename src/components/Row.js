@@ -39,17 +39,33 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
                 <div id={id} className="row_posters">
                     {
                         movies.map((movie) => {
-                            return (
-                                <div className='poster' key={movie.id} onClick={() => handleClick(movie)}>
-                                    <img
+                            if((isLargeRow ? movie.poster_path : movie.backdrop_path)===null){
 
-                                        className={`row_poster ${isLargeRow && "row_posterLarge"}`}
-                                        src={`https://image.tmdb.org/t/p/original/${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
-                                        alt={movie.name}
-                                    />
-                                    <span className='movie_name'>{movie.name || movie.title} (평점 : {movie.vote_average})</span>
-                                </div>
-                            )
+                                return (
+                                    <div className='poster' key={movie.id} onClick={() => handleClick(movie)}>
+                                        <img
+                                            className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+                                            src={`https://via.placeholder.com/427x240`}
+                                            alt={movie.name}
+                                          
+                                        />
+                                        <span className='movie_name'>{movie.name || movie.title} (평점 : {movie.vote_average})</span>
+                                    </div>
+                                )        
+                            }else{
+                                return (
+                                    <div className='poster' key={movie.id} onClick={() => handleClick(movie)}>
+                                        <img
+    
+                                            className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+                                            src={`https://image.tmdb.org/t/p/original${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
+                                            alt={movie.name}
+                                        />
+                                        <span className='movie_name'>{movie.name || movie.title} (평점 : {movie.vote_average})</span>
+                                    </div>
+                                )
+                            }
+
 
                         })
                     }
