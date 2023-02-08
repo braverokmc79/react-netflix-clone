@@ -34,18 +34,18 @@ const Nav = () => {
                 //src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/170px-Netflix_2015_logo.svg.png"
                 src="img/Now_Logo.png"
                 className='nav_logo'
-                onClick={() => window.location.reload()}
+                onClick={() => navigate("/")}
             />
 
 
-            <input value={searchValue} 
-            onChange={handleChange}  className="nav_input"  type="text" placeholder='영화를 검색해 주세요.' />
+            <input value={searchValue} o
+            onChange={handleChange}  className="nav_input"  type="search" placeholder='영화를 검색해 주세요.' />
 
             <img
                 alt='User logged'
                 src="img/logo.png"
                 className='nav_avatar'
-                onClick={() => window.location.reload()}
+                onClick={() => navigate("/")}
             />
 
         </nav>
