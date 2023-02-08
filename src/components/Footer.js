@@ -6,13 +6,13 @@ export default function Footer() {
         <FooterContainer>
             <FooterContent>
                 <FooterLinkContainer>
-                    <FooterLinkTitle>Now Movies Korea</FooterLinkTitle>
+                    <FooterLinkTitle>나우무비스 대한민국</FooterLinkTitle>
                     <FooterLinkContent>
                         {/* <FooterLink href="https://help.netflix.com/ko/node/412">
                             Now Movie 소개
                         </FooterLink> */}
                         <FooterLink href="https://help.netflix.com/ko">
-                            Now Movies 소개
+                             소개
                         </FooterLink>
                         <FooterLink href="https://help.netflix.com/ko/">
                             미디어 센터
@@ -23,7 +23,7 @@ export default function Footer() {
                     </FooterLinkContent>
                     <FooterDescContainer>
                         <FooterDescRights>
-                            Now Movie Rights Reserved.
+                            Now Movies Rights Reserved.
                         </FooterDescRights>
                     </FooterDescContainer>
                 </FooterLinkContainer>

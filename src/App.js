@@ -7,7 +7,6 @@ import DetailPage from './pages/DetailPage';
 import SearchPage from './pages/SearchPage';
 
 
-
 const Layout =()=>{
   return(
     <div>
@@ -21,9 +20,12 @@ const Layout =()=>{
 }
 
 
-
-
 function App() {
+  if (process.env.NODE_ENV === "production") {
+    console.log = function no_console() {};
+    console.warn = function no_console() {};
+  }
+  
   return (
     <div className="App">
       <Routes>
