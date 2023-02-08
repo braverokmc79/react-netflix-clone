@@ -21,9 +21,18 @@ export default function Footer() {
                             이용 약관
                         </FooterLink>
                     </FooterLinkContent>
+                    <FooterDescTop>
+                   
+                    나우무비스는 영화,드라마,예능,미드, 넷플릭스 등을 무료 스트리밍에 대한 
+                    단순 구글 검색엔진을 통한  웹사이트 검색 링크주소만 제공하고 있습니다.<br />
+                    나우무비스는 넷플릭스(Netflix),와차,디즈니플러스,웨이브 등 각종 OTT에
+                    대한 단순 구글 검색엔진 링크 웹사이트 주소로서 그어떠한 동영상, 이미지, 파일등을 직접적으로 업로드 제공을 하지 않습니다
+                    </FooterDescTop>
+
+
                     <FooterDescContainer>
                         <FooterDescRights>
-                            Now Movies Rights Reserved.
+                            Copyright ©  Now Movies. All rights reserved.
                         </FooterDescRights>
                     </FooterDescContainer>
                 </FooterLinkContainer>
@@ -33,6 +42,7 @@ export default function Footer() {
 }
 
 const FooterContainer = styled.div`
+  margin-top:100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +106,13 @@ const FooterDescContainer = styled.div`
    @media (max-width: 768px) {
     margin-top: 20px;
   }
+`;
+
+const FooterDescTop = styled.div`
+  color: gray;
+  font-size: 12px;
+  text-align: lef;
+  line-height: 2;
 `;
 
 const FooterDescRights = styled.h2`

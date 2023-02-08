@@ -4,6 +4,7 @@ import axiosEn from '../api/axiosEn';
 import requests from '../api/requests';
 import './Banner.css';
 import styled from 'styled-components';
+import GoMove from './GoMove';
 
 const Container = styled.div`
     display: flex;
@@ -109,6 +110,15 @@ const Banner = () => {
 
                         <button className="banner_button info">More Information</button>
                     </div>
+                    <div className='go-moive'>
+                            <GoMove title={movie.title}  name={movie.name} domain={"peekle"}  webSiteName={"피클"}    />
+                            <GoMove  title={movie.title}  name={movie.name} domain={"qooqootv"}  webSiteName={"쿠쿠티비"}   />
+                            <GoMove  title={movie.title}  name={movie.name} domain={"youtube"}  webSiteName={"유튜브"}   />
+                            <GoMove  title={movie.title}  name={movie.name} domain={"kugabox"}  webSiteName={"쿠가박스"}   />
+                            <GoMove  title={movie.title}  name={movie.name} domain={"koreanz"}  webSiteName={"코리안즈"}   />
+                            <GoMove  title={movie.title}  name={movie.name} domain={"sonagitv"}  webSiteName={"소나기"}   />
+                            <GoMove  title={movie.title}  name={movie.name} domain={"justlink"}  webSiteName={"저스트링크"}   />
+                      </div>
 
                     <h1 className="banner_description">
                         {truncate(movie.overview, 100)}

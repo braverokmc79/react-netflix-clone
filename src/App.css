@@ -1,3 +1,45 @@
 body{
      background-color: black;
 }
+
+.btn{
+     padding: 10px;
+     color: #fff;
+     text-decoration: none;
+     opacity: 0.8;
+     margin-right: 10px;
+   }
+   .btn:hover{
+     opacity: 1;
+     
+   }
+   .peekle{
+     background-color: #2A4FB3;
+   }
+   .qooqootv{
+     background-color: #ffad2d;
+   }
+   .youtube{
+     background-color: #ff0000;
+   }
+   .kugabox {
+     background-color: #68a824;
+   }
+   .koreanz{
+     background-color: #e6ce1d;
+   }
+   .sonagitv{
+     background-color: #2287b3;
+   }
+
+   .justlink{
+     background-color: #9e1569;
+   }
+
+   
+   .go-moive{
+     margin: 30px 0px;
+     margin-right: 5px;
+     word-break: keep-all;
+     line-height: 55px;
+   }

@@ -1,7 +1,7 @@
 .banner {
   color: white;
   object-fit: contain;
-  height: 448px;
+  height: 630px;
 }
 
 .banner_contents {
@@ -75,7 +75,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 19rem;
+    height: 14rem;
   }
 }
 @media (max-width: 768px) {

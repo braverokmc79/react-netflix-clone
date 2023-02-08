@@ -39,20 +39,20 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
                 <div id={id} className="row_posters">
                     {
                         movies.map((movie) => {
-                            if((isLargeRow ? movie.poster_path : movie.backdrop_path)===null){
+                            // if((isLargeRow ? movie.poster_path : movie.backdrop_path)===null){
 
-                                return (
-                                    <div className='poster' key={movie.id} onClick={() => handleClick(movie)}>
-                                        <img
-                                            className={`row_poster ${isLargeRow && "row_posterLarge"}`}
-                                            src={`https://via.placeholder.com/427x240`}
-                                            alt={movie.name}
+                            //     return (
+                            //         <div className='poster' key={movie.id} onClick={() => handleClick(movie)}>
+                            //             <img
+                            //                 className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+                            //                 src={`https://via.placeholder.com/427x240`}
+                            //                 alt={movie.name}
                                           
-                                        />
-                                        <span className='movie_name'>{movie.name || movie.title} (평점 : {movie.vote_average})</span>
-                                    </div>
-                                )        
-                            }else{
+                            //             />
+                            //             <span className='movie_name'>{movie.name || movie.title} (평점 : {movie.vote_average})</span>
+                            //         </div>
+                            //     )        
+                        if((isLargeRow ? movie.poster_path : movie.backdrop_path)!==null){
                                 return (
                                     <div className='poster' key={movie.id} onClick={() => handleClick(movie)}>
                                         <img

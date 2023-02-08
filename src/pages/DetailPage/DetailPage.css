@@ -1,0 +1,28 @@
+.section-detail{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top:100px;
+}
+
+.modal_user_release_date{
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-detail .section-detail-title{
+    color:#fff;
+    text-align: center;
+    height: 200px;
+}
+
+.nav_avatar_back{
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    right:40px;
+    object-fit: contain;
+    cursor: pointer;
+    z-index: 10;
+}

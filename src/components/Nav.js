@@ -45,7 +45,7 @@ const Nav = () => {
                 alt='User logged'
                 src="img/logo.png"
                 className='nav_avatar'
-                onClick={() => navigate("/")}
+                onClick={() => window.location.reload()}
             />
 
         </nav>

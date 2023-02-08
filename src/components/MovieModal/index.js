@@ -3,6 +3,7 @@ import axios from '../../api/axios';
 import axiosEn from '../../api/axiosEn';
 import styled from 'styled-components';
 import './MovieModal.css';
+import GoMove from '../GoMove';
 
 const HomeContainer = styled.div`
     width: 100%;
@@ -49,6 +50,8 @@ const MovieModal = ({
 
     }, []);
 
+   
+
     const movieDetail = async () => {
 
         //특정 영화의 더 상세한 정보를 가져오기 (비디오 정보도 포함)
@@ -57,27 +60,34 @@ const MovieModal = ({
         })
 
 
-
+        console.log(" 디테일 :  " , movie);
+        
         //비디오가 없다면 다음을 실행
         if (movie.videos === undefined) {
             const { data: movieDetailEn } = await axiosEn.get(`movie/${id}`, {
                 params: { append_to_response: "videos" },
             });
-            setMovieKey(movieDetailEn.videos.results[0].key);
+
+
+            if(movieDetailEn.videos.results.length>0){
+                setMovieKey(movieDetailEn.videos.results[0].key);
+            }
+           
         } else {
-            setMovieKey(movie.videos.results[0].key)
+            if(movie.videos.results.length>0){
+                setMovieKey(movie.videos.results[0].key);
+            }
+           
         }
     }
 
-    console.log("영화 movie : ", movieKey);
+    //console.log("영화 movie : ", movieKey);
 
     return (
         <div className='presentation'>
-            <div className='wrapper-modal' onClick={() => setModalOpen(false)} >
+            <div className='wrapper-modal'  >
                 <div className='modal'>
-                    <span onClick={() => setModalOpen(false)} className="modal-close">
-                        x
-                    </span>
+                  
 
 
                     {movieKey && <HomeContainer>
@@ -105,6 +115,20 @@ const MovieModal = ({
                             </span>
                             {release_date ? release_date : first_air_date}
                         </p>
+                        <span onClick={() => setModalOpen(false)} className="modal-close"> x</span>
+                        
+                      <div className='go-moive'>
+                            <GoMove  title={title}  name={name} domain={"peekle"}  webSiteName={"피클"}    />
+                            <GoMove  title={title}  name={name} domain={"qooqootv"}  webSiteName={"쿠쿠티비"}   />
+                            <GoMove  title={title}  name={name} domain={"youtube"}  webSiteName={"유튜브"}   />
+                            <GoMove  title={title}  name={name} domain={"kugabox"}  webSiteName={"쿠가박스"}   />
+                            <GoMove  title={title}  name={name} domain={"koreanz"}  webSiteName={"코리안즈"}   />
+                            <GoMove  title={title}  name={name} domain={"sonagitv"}  webSiteName={"소나기"}   />
+                            <GoMove  title={title}  name={name} domain={"justlink"}  webSiteName={"저스트링크"}   />
+                      </div>
+                    
+                      
+
 
                         <h2 className='modal_title'>{title ? title : name}</h2>
                         <p className='modal_overview'>평점 : {vote_average}</p>

@@ -18,6 +18,7 @@ state:null
 function SearchPage() {
   const [searchResults, setSearchResults] =useState([]);
   const navigate =useNavigate();
+ 
 
   const useQuery =()=>{
     return new URLSearchParams(useLocation().search);
@@ -27,7 +28,6 @@ function SearchPage() {
   const searchTerm =query.get("q");
   const debounceTerm =useDebounce(searchTerm, 500);
  
-
 
   useEffect(()=>{
     if(debounceTerm){
@@ -57,9 +57,9 @@ function SearchPage() {
               return (
 
                   <div className='movie' key={movie.id}>
-                      <div className='movie_column-poster'>
+                      <div className='movie_column-poster' onClick={()=>navigate(`/movie/${movie.id}`)}>
                           <img src={movieImageUrl}  alt="movie" className='movie_poster' />
-                          <span className='movie_name'>{movie.name || movie.title} (평점 : {movie.vote_average})</span>
+                          <span className='search_movie_name'>{movie.name || movie.title} (평점 : {movie.vote_average})</span>
                       </div>
                   </div>
               );

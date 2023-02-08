@@ -44,7 +44,14 @@
   
   .movie_name{
     color: #fff;
-    position: absolute;
+    /* position: absolute; */
+    bottom: -10%;
+    left: 5%;
+  }
+
+  .search_movie_name{
+    color: #fff;
+    position: absolute; 
     bottom: -10%;
     left: 5%;
   }
