@@ -4,8 +4,8 @@ export default function useOnClickOutside(ref, handler) {
   
     useEffect(()=>{
         const listener=(event)=>{
-            console.log(" ref " , ref.current);
-            console.log(" event.target " , event.target);
+           // console.log(" ref " , ref.current);
+            //console.log(" event.target " , event.target);
             if(!ref.current || ref.current.contains(event.target)){
                 return;
             }

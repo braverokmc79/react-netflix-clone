@@ -149,7 +149,7 @@ h2 {
   } 
 }
 @media screen and (max-width: 768px) {
-  .row_poster {
+  .row_poster { 
     max-height: 100px;
   }
   .row_posterLarge {

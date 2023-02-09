@@ -1,12 +1,14 @@
 {
-  "name": "react-netflix-clone",
+  "name": "netflix",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://braverokmc79.github.io/netflix",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.2",
+    "cross-env": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
@@ -16,10 +18,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev" :"cross-env REACT_APP_API_URL=localhost react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build --mode production",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-transform-remove-console": "^6.9.4"
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "gh-pages": "^5.0.0"
   }
 }
