@@ -32,7 +32,7 @@ const Nav = () => {
             <img
                 alt="Netflix logo"
                 //src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/170px-Netflix_2015_logo.svg.png"
-                src="img/Now_Logo.png"
+                src={`${process.env.PUBLIC_URL}/img/Now_Logo.png`}
                 className='nav_logo'
                 onClick={() => navigate("/")}
             />
@@ -43,7 +43,7 @@ const Nav = () => {
 
             <img
                 alt='User logged'
-                src="img/logo.png"
+                src={`${process.env.PUBLIC_URL}/img/logo.png`}
                 className='nav_avatar'
                 onClick={() => window.location.reload()}
             />

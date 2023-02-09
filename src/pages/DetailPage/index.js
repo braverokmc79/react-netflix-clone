@@ -3,7 +3,7 @@ import axios from '../../api/axios';
 import axiosEn from '../../api/axiosEn';
 import styled from 'styled-components';
 import './DetailPage.css';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import GoMove from "../../components/GoMove";
 
 const HomeContainer = styled.div`
@@ -35,6 +35,17 @@ const DetailPage = ({setModalOpen}) => {
     const [movie, setMovie] = useState("");
     const [movieKey, setMovieKey] = useState("");
     const [requestError, setRequestError]=useState(false);
+
+
+    const useQuery=()=>{
+        return new URLSearchParams(useLocation().search);
+    }
+
+    let query =useQuery();
+    const imgURL =query.get("imgURL");
+
+    console.log(" imgURL : " ,imgURL);
+
 
     useEffect(() => {
         if (movieId) {
@@ -122,7 +133,7 @@ const DetailPage = ({setModalOpen}) => {
 
       <img
           className='modal_poster-img'
-          src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+          src={`${movie.backdrop_path !==null ?  `https://image.tmdb.org/t/p/original/${movie.backdrop_path}`  : `${imgURL}` }`}
           alt={movie.name}
        />
 
@@ -134,7 +145,7 @@ const DetailPage = ({setModalOpen}) => {
                            <span className='modal_user_release_date'>
                              개봉일1: {movie.release_date ? movie.release_date : movie.first_air_date}
                           </span>
-                          justify-content: flex-end
+                        
                        </p>
 
                      <h2 className='modal_title'>{movie.title ? movie.title : movie.name}</h2>

@@ -26,7 +26,8 @@ export default function Footer() {
                     나우무비스는 영화,드라마,예능,미드, 넷플릭스 등을 무료 스트리밍에 대한 
                     단순 구글 검색엔진을 통한  웹사이트 검색 링크주소만 제공하고 있습니다.<br />
                     나우무비스는 넷플릭스(Netflix),와차,디즈니플러스,웨이브 등 각종 OTT에
-                    대한 단순 구글 검색엔진 링크 웹사이트 주소로서 그어떠한 동영상, 이미지, 파일등을 직접적으로 업로드 제공을 하지 않습니다
+                    대한 단순 구글 검색엔진 링크 웹사이트 주소로서 그어떠한 동영상, 이미지, 파일등을 직접적으로 업로드 제공을 하지 않습니다.<br />
+                    저적권 문의는 해당 링크의 웹사이트에서 문의해 주시길 바랍니다.
                     </FooterDescTop>
 
 
@@ -56,16 +57,24 @@ const FooterContainer = styled.div`
     padding: 20px 20px;
     padding-bottom: 30px;
   }
+
+  
+
 `;
 
 const FooterContent = styled.div``;
 
 const FooterLinkContainer = styled.div`
-  width: 500px;
+   width: 500px;
 
   @media (max-width: 768px) {
     width: 100%;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
 `;
 
 const FooterLinkTitle = styled.h1`

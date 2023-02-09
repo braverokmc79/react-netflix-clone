@@ -57,7 +57,7 @@ function SearchPage() {
               return (
 
                   <div className='movie' key={movie.id}>
-                      <div className='movie_column-poster' onClick={()=>navigate(`/movie/${movie.id}`)}>
+                      <div className='movie_column-poster' onClick={()=>navigate(`/movie/${movie.id}?imgURL=${movieImageUrl}`)}>
                           <img src={movieImageUrl}  alt="movie" className='movie_poster' />
                           <span className='search_movie_name'>{movie.name || movie.title} (평점 : {movie.vote_average})</span>
                       </div>
