@@ -143,7 +143,7 @@ const DetailPage = ({setModalOpen}) => {
                               100% for you &nbsp;
                            </span>
                            <span className='modal_user_release_date'>
-                             개봉일1: {movie.release_date ? movie.release_date : movie.first_air_date}
+                             개봉일: {movie.release_date ? movie.release_date : movie.first_air_date}
                           </span>
                         
                        </p>
@@ -151,6 +151,7 @@ const DetailPage = ({setModalOpen}) => {
                      <h2 className='modal_title'>{movie.title ? movie.title : movie.name}</h2>
                      
                      <div className='go-moive'>
+                            <GoMove title={movie.title}  name={movie.name} domain={"noonoo"}  webSiteName={"누누티비"}    />
                             <GoMove title={movie.title}  name={movie.name} domain={"peekle"}  webSiteName={"피클"}    />
                             <GoMove  title={movie.title}  name={movie.name} domain={"qooqootv"}  webSiteName={"쿠쿠티비"}   />
                             <GoMove  title={movie.title}  name={movie.name} domain={"youtube"}  webSiteName={"유튜브"}   />

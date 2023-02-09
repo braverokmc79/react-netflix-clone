@@ -111,6 +111,8 @@ const Banner = () => {
                         <button className="banner_button info">More Information</button>
                     </div>
                     <div className='go-moive'>
+                  
+                            <GoMove title={movie.title}  name={movie.name} domain={"noonoo"}  webSiteName={"누누티비"}    />
                             <GoMove title={movie.title}  name={movie.name} domain={"peekle"}  webSiteName={"피클"}    />
                             <GoMove  title={movie.title}  name={movie.name} domain={"qooqootv"}  webSiteName={"쿠쿠티비"}   />
                             <GoMove  title={movie.title}  name={movie.name} domain={"youtube"}  webSiteName={"유튜브"}   />

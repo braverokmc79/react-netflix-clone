@@ -122,6 +122,7 @@ const MovieModal = ({
                         <span onClick={() => setModalOpen(false)} className="modal-close"> x</span>
                         
                       <div className='go-moive'>
+                            <GoMove  title={title}  name={name} domain={"noonoo"}  webSiteName={"누누티비"}    />
                             <GoMove  title={title}  name={name} domain={"peekle"}  webSiteName={"피클"}    />
                             <GoMove  title={title}  name={name} domain={"qooqootv"}  webSiteName={"쿠쿠티비"}   />
                             <GoMove  title={title}  name={name} domain={"youtube"}  webSiteName={"유튜브"}   />
