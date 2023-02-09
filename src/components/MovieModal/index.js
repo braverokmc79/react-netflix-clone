@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState , useRef} from 'react';
 import axios from '../../api/axios';
 import axiosEn from '../../api/axiosEn';
 import styled from 'styled-components';
 import './MovieModal.css';
 import GoMove from '../GoMove';
+import useOnClickOutside from '../../hooks/useOnClickOutside';
 
 const HomeContainer = styled.div`
     width: 100%;
@@ -81,12 +82,15 @@ const MovieModal = ({
         }
     }
 
-    //console.log("영화 movie : ", movieKey);
+
+   //모달창 외부 클릭시 모달 닫게 
+    const ref =useRef();
+    useOnClickOutside(ref, ()=>{setModalOpen(false)});
 
     return (
         <div className='presentation'>
             <div className='wrapper-modal'  >
-                <div className='modal'>
+                <div className='modal' ref={ref}>
                   
 
 
