@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import './MovieModal.css';
 import GoMove from '../GoMove';
 import useOnClickOutside from '../../hooks/useOnClickOutside';
+import Advertisement from '../Advertisement';
 
 const HomeContainer = styled.div`
     width: 100%;
@@ -28,6 +29,7 @@ const Iframe = styled.iframe`
        height: 200;       
     }
 `;
+
 
 const MovieModal = ({
     isLargeRow,
@@ -117,10 +119,15 @@ const MovieModal = ({
                             <span className='modal_user_perc'>
                                 100% for you &nbsp;
                             </span>
-                            {release_date ? release_date : first_air_date}
-                        </p>
-                        <span onClick={() => setModalOpen(false)} className="modal-close"> x</span>
+                          개봉일:   {release_date ? release_date : first_air_date}
                         
+                        {/* <span onClick={() => setModalOpen(false)} className="modal-close"> x</span>
+                         */}
+
+                        <Advertisement />
+
+                        </p>
+
                       <div className='go-moive'>
                             <GoMove  title={title}  name={name} domain={"noonoo"}  webSiteName={"누누티비"}    />
                             <GoMove  title={title}  name={name} domain={"peekle"}  webSiteName={"피클"}    />

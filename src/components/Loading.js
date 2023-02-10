@@ -25,8 +25,9 @@ import styled from 'styled-components';
 export default function Loading() {
   return (
     <Background>
+       <img src={`${process.env.PUBLIC_URL}/img/Spinner.svg`} alt="로딩중" width="10%" />
     <LoadingText>잠시만 기다려 주세요.</LoadingText>
-    <img src={`${process.env.PUBLIC_URL}/img/Spinner.svg`} alt="로딩중" width="5%" />
+   
   </Background>
   )
 }

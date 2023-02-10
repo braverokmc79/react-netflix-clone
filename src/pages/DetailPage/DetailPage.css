@@ -26,3 +26,7 @@
     cursor: pointer;
     z-index: 10;
 }
+
+.p2 , .p-detaile{
+    background-color: black !important;
+}

@@ -5,6 +5,7 @@ import requests from '../api/requests';
 import './Banner.css';
 import styled from 'styled-components';
 import GoMove from './GoMove';
+import Advertisement from './Advertisement';
 
 const Container = styled.div`
     display: flex;
@@ -38,6 +39,8 @@ const Iframe = styled.iframe`
        height: 100%;       
     }
 `;
+
+
 
 const Banner = () => {
     const [movie, setMovie] = useState([]);
@@ -104,13 +107,20 @@ const Banner = () => {
                         {movie.title || movie.name || movie.original_name}
                     </h1>
 
+                 
+
+
                     <div className="banner_buttons">
-                        <button className="banner_button play" onClick={() => setIsClicked(true)}>
+                       
+                     
+                        {/* <button className="banner_button info">More Information</button> */}
+                        <Advertisement />
+
+                          <button className="banner_button play" onClick={() => setIsClicked(true)}>
                             Play
                         </button>
-                        {/* <button className="banner_button info">More Information</button> */}
-                       
                     </div>
+      
                     <div className='go-moive'>
                   
                             <GoMove title={movie.title}  name={movie.name} domain={"noonoo"}  webSiteName={"누누티비"}    />

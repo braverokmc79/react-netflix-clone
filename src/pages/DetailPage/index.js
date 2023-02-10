@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import './DetailPage.css';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import GoMove from "../../components/GoMove";
+import Advertisement from '../../components/Advertisement';
 
 const HomeContainer = styled.div`
     width: 100%;
@@ -43,9 +44,6 @@ const DetailPage = ({setModalOpen}) => {
 
     let query =useQuery();
     const imgURL =query.get("imgURL");
-
-    console.log(" imgURL : " ,imgURL);
-
 
     useEffect(() => {
         if (movieId) {
@@ -138,7 +136,7 @@ const DetailPage = ({setModalOpen}) => {
        />
 
              <div className='modal_content'>
-                     <p className='modal_details'>
+                     <p className='modal_details p2'>
                            <span className='modal_user_perc'>
                               100% for you &nbsp;
                            </span>
@@ -146,9 +144,11 @@ const DetailPage = ({setModalOpen}) => {
                              개봉일: {movie.release_date ? movie.release_date : movie.first_air_date}
                           </span>
                         
+                          <Advertisement />
+
                        </p>
 
-                     <h2 className='modal_title'>{movie.title ? movie.title : movie.name}</h2>
+                     <h2 className='modal_title p2'>{movie.title ? movie.title : movie.name}</h2>
                      
                      <div className='go-moive'>
                             <GoMove title={movie.title}  name={movie.name} domain={"noonoo"}  webSiteName={"누누티비"}    />
@@ -164,8 +164,8 @@ const DetailPage = ({setModalOpen}) => {
                       </div>
 
                      
-                       <p className='modal_overview'>평점 : {movie.vote_average}</p>
-                       <p className='modal_overview'>{movie.overview}</p>
+                       <p className='modal_overview p-detaile'>평점 : {movie.vote_average}</p>
+                       <p className='modal_overview p-detaile'>{movie.overview}</p>
                   </div>
     </section>
 
