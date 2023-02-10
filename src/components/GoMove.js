@@ -17,7 +17,7 @@ export default function  GoMove({title , name, webSiteName, domain}) {
    
   return (
         <a href={`${link}${title ? encodeURIComponent(title) : encodeURIComponent(name)}`}
-         target="_blank" rel="noopener noreferrer" className={`btn ${domain}`} >
+         rel="noopener noreferrer" className={`btn ${domain}`} >
         <i className="fa fa-eye"></i> {webSiteName}
         </a>
     

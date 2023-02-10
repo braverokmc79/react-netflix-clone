@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 const Iframe = styled.iframe`
-    width:200px;
-    height: 150px;
+   
 
     &::after{
        content:"" ;
@@ -14,12 +13,14 @@ const Iframe = styled.iframe`
     }
 `;
 
-function Advertisement() {
+function Advertisement({w, h}) {
   return (
     
                
                <Iframe src="https://ads-partners.coupang.com/widgets.html?id=638929&template=carousel&trackingCode=AF2176654&subId=&width=200&height=150" 
-                         frameborder="0" scrolling="no" referrerpolicy="unsafe-url"></Iframe>
+                className='advertisement'    
+               style={{width:w , height:h}}
+               frameborder="0" scrolling="no" referrerpolicy="unsafe-url"></Iframe>
     
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Advertisement from '../../components/Advertisement';
 import "./AccessBlocked.css";
 
 
@@ -6,7 +7,10 @@ function AccessBlocked() {
   return (
     <div className='submenu'>
 
+
 <div className="fr-view article-content">
+
+	<Advertisement  w={1200} h={250} />
 
 	<h3>
 		<span className="span1" >모바일에서 접속 차단이
@@ -16,14 +20,13 @@ function AccessBlocked() {
 	
 		<span className="span1"><a
 				href="https://getunicorn.app/ko/product/unicorn-pro/android"
-				target="_blank" title="play.google.com/store/apps/details (외부 사이트)"
+				 title="play.google.com/store/apps/details (외부 사이트)"
 				className="external" rel="external nofollow noopener noreferrer">안드로이드
 					(유니콘) 어플 설치</a></span>
 	</div>
 	<div className='div1'>
 		<span className="span1"><a
 				href="https://apps.apple.com/kr/app/id1046714401"
-				target="_blank"
 				title="apps.apple.com/kr/app/%EC%9C%A0%EB%8B%88%EC%BD%98-https-unicorn-https/id1466584968 (외부 사이트)"
 				className="external" rel="external nofollow noopener noreferrer">애플
 					(유니콘) 어플 설치</a></span>

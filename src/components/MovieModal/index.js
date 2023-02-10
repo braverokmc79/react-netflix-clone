@@ -63,7 +63,6 @@ const MovieModal = ({
         })
 
 
-        console.log(" 디테일 :  " , movie);
         
         //비디오가 없다면 다음을 실행
         if (movie.videos === undefined) {
@@ -124,7 +123,7 @@ const MovieModal = ({
                         {/* <span onClick={() => setModalOpen(false)} className="modal-close"> x</span>
                          */}
 
-                        <Advertisement />
+                      <Advertisement  w={150} h={200} />
 
                         </p>
 

@@ -99,7 +99,7 @@ const Banner = () => {
                     backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie.backdrop_path}")`,
                     backgroundPosition: "top center",
                     backgroundSize: "cover",
-                    top:"-21px"
+                    top:"120px"
                 }}
             >
                 <div className="banner_contents">
@@ -114,7 +114,7 @@ const Banner = () => {
                        
                      
                         {/* <button className="banner_button info">More Information</button> */}
-                        <Advertisement />
+                        <Advertisement  w={150} h={200} />
 
                           <button className="banner_button play" onClick={() => setIsClicked(true)}>
                             Play

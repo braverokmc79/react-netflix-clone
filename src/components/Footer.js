@@ -15,17 +15,8 @@ export default function Footer() {
                         <FooterLink>
                           <Link to={"accessBlocked"} >접속 차단이 된 경우</Link> 
                         </FooterLink>
-                        <FooterLink>
-                          <Link to={"privacyPolicy"} >개인정보 처리방침</Link> 
-                        </FooterLink>
-                        <FooterLink>
-                          <Link to={"termsofService"} >서비스 이용약관</Link> 
-                        </FooterLink>
 
-                      </FooterLinkContent>
-
-                      <FooterLinkContent>
-                      <FooterLink>
+                        <FooterLink>
                            <a href="https://waaboom.com/크롬-브라우저에서-vpn-우회방법/"  target="_blank" rel="noopener noreferrer">
                             크롬 브라우저에서 VPN 우회방법</a>
                         </FooterLink>
@@ -33,7 +24,18 @@ export default function Footer() {
                           <a href="https://waaboom.com/크롬-브라우저에서-vpn-우회방법/"  target="_blank" rel="noopener noreferrer" >  HTTPS SNI 차단 우회방법 </a>
                         </FooterLink>
 
-                    </FooterLinkContent>
+
+  
+                      </FooterLinkContent>
+
+                      <FooterLinkContent>
+                        <FooterLink>
+                            <Link to={"privacyPolicy"} >개인정보 처리방침</Link> 
+                          </FooterLink>
+                          <FooterLink>
+                            <Link to={"termsofService"} >서비스 이용약관</Link> 
+                          </FooterLink>
+                      </FooterLinkContent>
                     <FooterDescTop>
                    
 

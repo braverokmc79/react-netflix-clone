@@ -1,16 +1,17 @@
 import React from 'react'
+import Advertisement from '../../components/Advertisement';
 import "./PrivacyPolicy.css";
 
 function PrivacyPolicy() {
 
   return (
     <div className='submenu'>
+
+<Advertisement  w={1200} h={250} />
+
+
 <div className="mt-8">
-	<p className="pb-2 pt-2">&lt;나우무비스&gt; 개인정보보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을
-		원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.</p>
-	<p className="pb-2 pt-2">&lt;나우무비스&gt;('NowMovies') 은(는) 회사는 개인정보처리방침을
-		개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.</p>
-	<p className="pb-2 pt-2">○ 본 방침은 2015년 1월 1일부터 시행됩니다.</p>
+
 	<h2 className="pb-2 pt-12 text-xl font-bold">1. 개인정보의 처리 목적</h2>
 	<p className="pb-2 pt-2">&lt;나우무비스&gt; 개인정보를 다음의 목적을 위해 처리합니다. 처리한 개인정보는 다음의 목적이외의 용도로는 사용되지 않으며
 		이용 목적이 변경될 시에는 사전동의를 구할 예정입니다.</p>

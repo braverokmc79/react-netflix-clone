@@ -1,6 +1,9 @@
 @font-face { font-family: 'TTTogether'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/TTTogetherA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
 body{
      background-color: black;
+     overflow-x: hidden;
 }
 
 .btn{
@@ -51,8 +54,9 @@ body{
    .go-moive{
      margin: 30px 0px;
      margin-right: 5px;
-     word-break: keep-all;
+     /* word-break: keep-all; */
      line-height: 55px;
+     overflow-wrap: break-word;
    }
 
 

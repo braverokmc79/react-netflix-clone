@@ -11,12 +11,15 @@ function MainPage() {
     <div>
       
         <Banner />
+        <div style={{height:"150px"}}></div>
         <Row
         title="넷플릭스 오리지널"
         id="NO"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow
         setLoading={setLoading}
+
+      
         />
 
         <Row title="최신인기 영화" id="TN" fetchUrl={requests.fetchTrending}  setLoading={setLoading} />

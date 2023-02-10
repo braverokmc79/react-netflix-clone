@@ -144,7 +144,7 @@ const DetailPage = ({setModalOpen}) => {
                              개봉일: {movie.release_date ? movie.release_date : movie.first_air_date}
                           </span>
                         
-                          <Advertisement />
+                          <Advertisement  w={150} h={200} />
 
                        </p>
 

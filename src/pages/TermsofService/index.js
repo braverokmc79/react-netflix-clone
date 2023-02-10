@@ -1,9 +1,15 @@
 import React from 'react'
+import Advertisement from '../../components/Advertisement';
 import "./TermsofService.css";
 
 function TermsofService() {
   return (
     <div className='submenu'>
+
+
+<Advertisement  w={1200} h={250} />
+
+
           <div className="row justify-content-center">
 	<div className="col-lg-10">
 		<div className="card">

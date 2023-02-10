@@ -27,7 +27,7 @@ const Row = ({ isLargeRow, title, id, fetchUrl , setLoading }) => {
 
     useEffect(() => {
         fetchMovieData();
-        console.log(" loading : ",);
+    
         if(id==="DM"){
             setTimeout(()=>{
                 setLoading(false);
@@ -52,7 +52,7 @@ const Row = ({ isLargeRow, title, id, fetchUrl , setLoading }) => {
     return (
         
 
-        <section className='row'>
+        <section className='row' id={id}>
             <h2>{title}</h2>
             {/* <div className='slider'>
                 <div className='slider_arrow-left' onClick={() => {

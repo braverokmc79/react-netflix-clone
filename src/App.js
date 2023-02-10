@@ -9,12 +9,15 @@ import ScrollTop from './components/ScrollTop';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import AccessBlocked from './pages/AccessBlocked';
 import TermsofService from './pages/TermsofService';
-
+import NavMenu from './components/NavMenu';
 
 const Layout =()=>{
   return(
     <div>
        <Nav />
+    
+     <NavMenu />
+      
 
        <Outlet />
 
@@ -27,10 +30,10 @@ const Layout =()=>{
 
 function App() {
 
-  // if (process.env.NODE_ENV === "production") {
-  //   console.log = function no_console() {};
-  //   console.warn = function no_console() {};
-  // }
+  if (process.env.NODE_ENV === "production") {
+    console.log = function no_console() {};
+    console.warn = function no_console() {};
+  }
   
   return (
     <div className="App">

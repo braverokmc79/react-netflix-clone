@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Nav.css';
 
+
 const Nav = () => {
     const [show, setShow] = useState(false);
     const [searchValue, setSearchValue] =useState("");
@@ -29,6 +30,10 @@ const Nav = () => {
 
     return (
         <nav className={`nav ${show && "nav_black"}`}>
+
+            <img alt='User logged' src={`${process.env.PUBLIC_URL}/img/logo.png`}
+                className='nav_avatar_mobile'   onClick={() => navigate("/")}  />
+ 
             <img
                 alt="Netflix logo"
                 //src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/170px-Netflix_2015_logo.svg.png"
