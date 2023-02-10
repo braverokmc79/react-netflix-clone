@@ -5,6 +5,7 @@ import { Outlet, Routes ,Route } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 import DetailPage from './pages/DetailPage';
 import SearchPage from './pages/SearchPage';
+import ScrollTop from './components/ScrollTop';
 
 
 const Layout =()=>{
@@ -15,6 +16,7 @@ const Layout =()=>{
        <Outlet />
 
        <Footer />
+       <ScrollTop />
     </div>
   )
 }
@@ -34,7 +36,6 @@ function App() {
            <Route path="search" element={<SearchPage />} />
            <Route path="/movie/:movieId" element={<DetailPage />} />
         </Route>
-      
       </Routes>
     </div>
   );
