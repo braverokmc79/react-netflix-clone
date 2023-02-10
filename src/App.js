@@ -6,6 +6,9 @@ import MainPage from './pages/MainPage';
 import DetailPage from './pages/DetailPage';
 import SearchPage from './pages/SearchPage';
 import ScrollTop from './components/ScrollTop';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import AccessBlocked from './pages/AccessBlocked';
+import TermsofService from './pages/TermsofService';
 
 
 const Layout =()=>{
@@ -23,10 +26,10 @@ const Layout =()=>{
 
 
 function App() {
-  if (process.env.NODE_ENV === "production") {
-    console.log = function no_console() {};
-    console.warn = function no_console() {};
-  }
+  // if (process.env.NODE_ENV === "production") {
+  //   console.log = function no_console() {};
+  //   console.warn = function no_console() {};
+  // }
   
   return (
     <div className="App">
@@ -34,11 +37,16 @@ function App() {
         <Route path='/'  element={<Layout />}>
            <Route index element={<MainPage />} />
            <Route path="search" element={<SearchPage />} />
+           <Route path="accessBlocked" element={<AccessBlocked />} />
+           <Route path="privacyPolicy" element={<PrivacyPolicy />} />
+           <Route path="termsofService" element={<TermsofService />} />
            <Route path="/movie/:movieId" element={<DetailPage />} />
         </Route>
       </Routes>
-    </div>
+    </div>  
   );
 }
+
+
 
 export default App;

@@ -24,6 +24,9 @@ body{
    .qooqootv{
      background-color: #ffad2d;
    }
+   .tvchak{
+     background-color: #2d1a8d;
+   }
    .youtube{
      background-color: #ff0000;
    }
@@ -39,6 +42,9 @@ body{
 
    .justlink{
      background-color: #9e1569;
+   }
+   .kokoa{
+    background-color: #160a51;
    }
 
    
@@ -82,4 +88,22 @@ body{
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.submenu{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 100px;
+  background: black;
+}
+
+@media (max-width: 768px) {
+  .submenu{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 340px;
+    margin-top: 100px;
+    background: black;
+  }
 }

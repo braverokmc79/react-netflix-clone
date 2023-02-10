@@ -37,7 +37,6 @@ const Nav = () => {
                 onClick={() => navigate("/")}
             />
 
-
             <input value={searchValue} 
             onChange={handleChange}  className="nav_input"  type="search" placeholder='영화를 검색해 주세요.' />
 

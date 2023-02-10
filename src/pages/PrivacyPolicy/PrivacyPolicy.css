@@ -1,0 +1,11 @@
+
+.list-decimal , .list-disc , .pb-2{
+    color: #fff;
+    text-align: left;
+}
+.pb-2{
+    margin-top: 10px;
+}
+.text-lg{
+    margin-top: 50px;
+}

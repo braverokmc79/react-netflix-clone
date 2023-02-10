@@ -125,11 +125,13 @@ const MovieModal = ({
                             <GoMove  title={title}  name={name} domain={"noonoo"}  webSiteName={"누누티비"}    />
                             <GoMove  title={title}  name={name} domain={"peekle"}  webSiteName={"피클"}    />
                             <GoMove  title={title}  name={name} domain={"qooqootv"}  webSiteName={"쿠쿠티비"}   />
+                            <GoMove  title={title}  name={name} domain={"tvchak"}  webSiteName={"티비착"}   />
                             <GoMove  title={title}  name={name} domain={"youtube"}  webSiteName={"유튜브"}   />
                             <GoMove  title={title}  name={name} domain={"kugabox"}  webSiteName={"쿠가박스"}   />
                             <GoMove  title={title}  name={name} domain={"koreanz"}  webSiteName={"코리안즈"}   />
                             <GoMove  title={title}  name={name} domain={"sonagitv"}  webSiteName={"소나기"}   />
                             <GoMove  title={title}  name={name} domain={"justlink"}  webSiteName={"저스트링크"}   />
+                            <GoMove  title={title}  name={name} domain={"kokoa"}  webSiteName={"코코아"}   />
                       </div>
                     
                       

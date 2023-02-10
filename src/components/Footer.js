@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export default function Footer() {
@@ -11,23 +12,41 @@ export default function Footer() {
                         {/* <FooterLink href="https://help.netflix.com/ko/node/412">
                             Now Movie 소개
                         </FooterLink> */}
-                        <FooterLink href="https://help.netflix.com/ko">
-                             소개
+                        <FooterLink>
+                          <Link to={"accessBlocked"} >접속 차단이 된 경우</Link> 
                         </FooterLink>
-                        <FooterLink href="https://help.netflix.com/ko/">
-                            미디어 센터
+                        <FooterLink>
+                          <Link to={"privacyPolicy"} >개인정보 처리방침</Link> 
                         </FooterLink>
-                        <FooterLink href="https://help.netflix.com/ko/">
-                            이용 약관
+                        <FooterLink>
+                          <Link to={"termsofService"} >서비스 이용약관</Link> 
                         </FooterLink>
+
+                      </FooterLinkContent>
+
+                      <FooterLinkContent>
+                      <FooterLink>
+                           <a href="https://waaboom.com/크롬-브라우저에서-vpn-우회방법/"  target="_blank" rel="noopener noreferrer">
+                            크롬 브라우저에서 VPN 우회방법</a>
+                        </FooterLink>
+                        <FooterLink >
+                          <a href="https://waaboom.com/크롬-브라우저에서-vpn-우회방법/"  target="_blank" rel="noopener noreferrer" >  HTTPS SNI 차단 우회방법 </a>
+                        </FooterLink>
+
                     </FooterLinkContent>
                     <FooterDescTop>
                    
+
                     나우무비스는 영화,드라마,예능,미드, 넷플릭스 등을 무료 스트리밍에 대한 
                     단순 구글 검색엔진을 통한  웹사이트 검색 링크주소만 제공하고 있습니다.<br />
                     나우무비스는 넷플릭스(Netflix),와차,디즈니플러스,웨이브 등 각종 OTT에
                     대한 단순 구글 검색엔진 링크 웹사이트 주소로서 그어떠한 동영상, 이미지, 파일등을 직접적으로 업로드 제공을 하지 않습니다.<br />
-                    저적권 문의는 해당 링크의 웹사이트에서 문의해 주시길 바랍니다.
+                    저적권 문의는 해당 링크의 웹사이트에서 문의해 주시길 바랍니다.<br /><br />
+                  
+                    CN : Now Moives  |  Addr: 13401 NE 20th St, Bellevue, WA 98005<br />
+
+                    광고 및 기타문의 : nowmovies7@proton.me
+                  
                     </FooterDescTop>
 
 
@@ -87,20 +106,20 @@ const FooterLinkContent = styled.div`
   display: flex;
   justify-content: space-bewteen;
   flex-wrap: wrap;
-  margin-top: 35px;
+  margin-top: 5px;
 
   @media (max-width: 768px) {
     margin-top: 26px;
   }
 `;
 
-const FooterLink = styled.a`
+const FooterLink = styled.span`
   color: gray;
   font-size: 14px;
-  width: 160px;
+  width: 210px;
   margin-bottom: 21px;
   text-decoration: none;
-
+  margin-right:50px;
   &:hover {
     text-decoration: underline;
   }

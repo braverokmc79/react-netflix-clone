@@ -154,11 +154,13 @@ const DetailPage = ({setModalOpen}) => {
                             <GoMove title={movie.title}  name={movie.name} domain={"noonoo"}  webSiteName={"누누티비"}    />
                             <GoMove title={movie.title}  name={movie.name} domain={"peekle"}  webSiteName={"피클"}    />
                             <GoMove  title={movie.title}  name={movie.name} domain={"qooqootv"}  webSiteName={"쿠쿠티비"}   />
+                            <GoMove  title={movie.title}  name={movie.name} domain={"tvchak"}  webSiteName={"티비착"}   />
                             <GoMove  title={movie.title}  name={movie.name} domain={"youtube"}  webSiteName={"유튜브"}   />
                             <GoMove  title={movie.title}  name={movie.name} domain={"kugabox"}  webSiteName={"쿠가박스"}   />
                             <GoMove  title={movie.title}  name={movie.name} domain={"koreanz"}  webSiteName={"코리안즈"}   />
                             <GoMove  title={movie.title}  name={movie.name} domain={"sonagitv"}  webSiteName={"소나기"}   />
                             <GoMove  title={movie.title}  name={movie.name} domain={"justlink"}  webSiteName={"저스트링크"}   />
+                            <GoMove  title={movie.title}  name={movie.name} domain={"kokoa"}  webSiteName={"코코아"}   />
                       </div>
 
                      
