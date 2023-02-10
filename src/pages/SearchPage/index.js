@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import './SearchPage.css';
 import { useDebounce } from '../../hooks/useDebounce';
+import Loading from '../../components/Loading';
 
 
 /** useLocation 값들
@@ -18,7 +19,7 @@ state:null
 function SearchPage() {
   const [searchResults, setSearchResults] =useState([]);
   const navigate =useNavigate();
- 
+  const [loading, setLoading] = useState(true);
 
   const useQuery =()=>{
     return new URLSearchParams(useLocation().search);
@@ -31,6 +32,7 @@ function SearchPage() {
 
   useEffect(()=>{
     if(debounceTerm){
+      setLoading(true);
       fetchSearchMovie(debounceTerm);
     }
   }, [debounceTerm]);
@@ -41,6 +43,10 @@ function SearchPage() {
      try{
       const request = await axios.get(`/search/multi?include_adult=false&query=${debounceTerm}`);
       setSearchResults(request.data.results);
+      setTimeout(()=>{
+        setLoading(false);
+       },300);
+
      }catch(error){
         console.log("error", error);
      }
@@ -49,7 +55,8 @@ function SearchPage() {
   
   const renderSearchResults=()=>{
 
-    return searchResults.length >0 ? (
+    return   searchResults.length >0 ? (
+    
       <section className='search-container'>
         {searchResults.map((movie)=>{
             if(movie.backdrop_path !==null && movie.media_type !== "person"){
@@ -65,10 +72,9 @@ function SearchPage() {
               );
 
             }
-
         })}
-   
-        
+        { loading &&  <Loading /> }
+
       </section> ) :
   
     

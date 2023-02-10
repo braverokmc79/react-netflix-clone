@@ -14,22 +14,32 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Loading from './Loading';
 
 
 
-const Row = ({ isLargeRow, title, id, fetchUrl }) => {
+const Row = ({ isLargeRow, title, id, fetchUrl , setLoading }) => {
     const [movies, setMovies] = useState([]);
     const [modalOpen, setModalOpen] = useState(false);
     const [movieSelected, setMovieSelected] = useState({});
-
+  
+ 
 
     useEffect(() => {
         fetchMovieData();
+        console.log(" loading : ",);
+        if(id==="DM"){
+            setTimeout(()=>{
+                setLoading(false);
+            }, 100)
+          
+        }
     }, []);
 
     const fetchMovieData = async () => {
         const request = await axios.get(fetchUrl);
         setMovies(request.data.results);
+       
     }
 
 
@@ -40,6 +50,8 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
 
 
     return (
+        
+
         <section className='row'>
             <h2>{title}</h2>
             {/* <div className='slider'>
@@ -76,9 +88,11 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
 
                 <div id={id} className="row_posters">
                     {
-                        movies.map((movie) => {
+                        movies.map((movie, index) => {
                          
                         if((isLargeRow ? movie.poster_path : movie.backdrop_path)!==null){
+                             
+
                                 return (
                                     <SwiperSlide  key={movie.id}>
                                         <div className={`poster ${isLargeRow !==undefined? "posterLarge" : "general" }`} onClick={() => handleClick(movie)}>
@@ -91,7 +105,9 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
                                             <span className='movie_name'>{movie.name || movie.title} (평점 : {movie.vote_average})</span>
                                         </div>
                                     </SwiperSlide>
+
                                 )
+                              
                             }
 
 
@@ -116,6 +132,7 @@ const Row = ({ isLargeRow, title, id, fetchUrl }) => {
             }
 
 
+           
         </section >
     );
 

@@ -7,7 +7,7 @@ export default function Footer() {
         <FooterContainer>
             <FooterContent>
                 <FooterLinkContainer>
-                    <FooterLinkTitle>나우무비스 대한민국</FooterLinkTitle>
+                    <FooterLinkTitle><strong>나우무비스</strong></FooterLinkTitle>
                     <FooterLinkContent>
                         {/* <FooterLink href="https://help.netflix.com/ko/node/412">
                             Now Movie 소개
@@ -97,8 +97,8 @@ const FooterLinkContainer = styled.div`
 `;
 
 const FooterLinkTitle = styled.h1`
-  color: gray;
-  font-size: 17px;
+  color: white;
+  font-size: 2rem;
 
 `;
 
