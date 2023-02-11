@@ -11,7 +11,7 @@ const NavMenu = () => {
     const location=useLocation();
 
     useEffect(() => {
-        console.log(" location : " , location.pathname);
+        //console.log(" location : " , location.pathname);
        
 
         window.addEventListener("scroll", () => {

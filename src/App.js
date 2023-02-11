@@ -43,10 +43,10 @@ function App() {
         <Route path='/'  element={<Layout />}>
            <Route index element={<MainPage />} />
            <Route path="search" element={<SearchPage />} />
+           <Route path="/movie/:movieId" element={<DetailPage />} />
+           <Route path="termsofService" element={<TermsofService />} />
            <Route path="accessBlocked" element={<AccessBlocked />} />
            <Route path="privacyPolicy" element={<PrivacyPolicy />} />
-           <Route path="termsofService" element={<TermsofService />} />
-           <Route path="/movie/:movieId" element={<DetailPage />} />
            <Route path="subPages/chrome" element={<Chrome />} />
            <Route path="subPages/https" element={<Https />} />
         </Route>
