@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import requests from '../../api/requests'
 import Banner from '../../components/Banner'
 import Loading from '../../components/Loading';
+import NavMenu from '../../components/NavMenu';
 import Row from '../../components/Row'
 
 function MainPage() {
   const [loading, setLoading] =useState(true);
 
   return (
+    <>  
     <div>
       
         <Banner />
@@ -32,6 +34,9 @@ function MainPage() {
        
       {loading ? <Loading /> : ""}
     </div>
+
+    <NavMenu />
+  </>
   )
 }
 

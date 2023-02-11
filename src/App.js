@@ -12,12 +12,12 @@ import TermsofService from './pages/TermsofService';
 import NavMenu from './components/NavMenu';
 import Chrome from './pages/SubPages/Chrome';
 import Https from './pages/SubPages/Https';
+import { useEffect } from 'react';
 
 const Layout =()=>{
   return(
     <div>
         <Nav />
-       <NavMenu />
       
        <Outlet /> 
         
@@ -30,11 +30,25 @@ const Layout =()=>{
 
 function App() {
 
+ 
+
   if (process.env.NODE_ENV === "production") {
     console.log = function no_console() {};
     console.warn = function no_console() {};
   }
   
+  //우클릭 차단
+  //   useEffect(() => {
+  //     const handleContextmenu = e => {
+  //         e.preventDefault()
+  //     }
+  //     document.addEventListener('contextmenu', handleContextmenu)
+  //     return function cleanup() {
+  //         document.removeEventListener('contextmenu', handleContextmenu)
+  //     }
+  // }, [ ]);
+
+
   return (
     <div className="App">
       <Routes>
