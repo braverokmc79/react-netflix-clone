@@ -12,10 +12,11 @@ function AccessBlocked() {
 
 	<Advertisement  w={1200} h={250} />
 
-	<h3>
-		<span className="span1" >모바일에서 접속 차단이
+	<br/><br/>
+	<h2>
+		<span>모바일에서 접속 차단이
 				된 경우 간편하게 우회할 방법</span>
-	</h3>
+	</h2>
 	<div className='div1'>
 	
 		<span className="span1"><a

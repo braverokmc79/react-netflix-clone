@@ -9,17 +9,17 @@ function TermsofService() {
 
 <Advertisement  w={1200} h={250} />
 
-
+			<br/><br/>
           <div className="row justify-content-center">
 	<div className="col-lg-10">
 		<div className="card">
 			<div className="card-body">
-				<h1>서비스 약관</h1>
+				<h1 className='text-left'>서비스 약관</h1>
 				<p>이 페이지는 나우무비스의 이용약관을 설명하며, 사용자는 나우무비스 사이트를 이용할 때
 					이용약관에 동의하는 것을 조건으로 합니다.</p>
-				<h2>이용 조건</h2>
-				<p>사이트는 모든 사용자가 액세스할 수 있으므로 서비스 이용 시 이용 약관에 동의해야 합니다.</p>
-				<ul>
+				<h2 className='text-left'>이용 조건</h2>
+				<p>다음의 경우 나우무비스 서비스를 사용하지 마십시오.</p>
+				<ul className='subpages-detaile'>
 					<li className="list">피싱, 멀웨어 또는 바이러스를 유포하는 콘텐츠</li>
 					<li className="list">악의적이거나 의심스러운 콘텐츠</li>
 					<li className="list">포르노, 성적, 폭력적 또는 편견이 있는 콘텐츠</li>
@@ -35,7 +35,7 @@ function TermsofService() {
 					<li className="list">권한 없는 페이지</li>
 					<li className="list">사용자로부터 데이터 및 개인 정보를 수집하기 위한 콘텐츠</li>
 				</ul>
-				<p>다음의 경우 나우무비스 서비스를 사용하지 마십시오.</p>
+				
 				
 			</div>
 		

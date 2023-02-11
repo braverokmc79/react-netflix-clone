@@ -10,6 +10,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import AccessBlocked from './pages/AccessBlocked';
 import TermsofService from './pages/TermsofService';
 import NavMenu from './components/NavMenu';
+import Chrome from './pages/SubPages/Chrome';
+import Https from './pages/SubPages/Https';
 
 const Layout =()=>{
   return(
@@ -45,6 +47,8 @@ function App() {
            <Route path="privacyPolicy" element={<PrivacyPolicy />} />
            <Route path="termsofService" element={<TermsofService />} />
            <Route path="/movie/:movieId" element={<DetailPage />} />
+           <Route path="subPages/chrome" element={<Chrome />} />
+           <Route path="subPages/https" element={<Https />} />
         </Route>
       </Routes>
     </div>  

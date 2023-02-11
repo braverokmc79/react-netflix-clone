@@ -17,11 +17,14 @@ export default function Footer() {
                         </FooterLink>
 
                         <FooterLink>
-                           <a href="https://waaboom.com/크롬-브라우저에서-vpn-우회방법/"  target="_blank" rel="noopener noreferrer">
-                            크롬 브라우저에서 VPN 우회방법</a>
+                           <Link to={"subPages/chrome"} >
+                            크롬 브라우저에서 VPN 우회방법
+                            </Link> 
                         </FooterLink>
                         <FooterLink >
-                          <a href="https://waaboom.com/크롬-브라우저에서-vpn-우회방법/"  target="_blank" rel="noopener noreferrer" >  HTTPS SNI 차단 우회방법 </a>
+                           <Link to={"subPages/https"} >
+                           HTTPS SNI 차단 우회방법
+                            </Link> 
                         </FooterLink>
 
 

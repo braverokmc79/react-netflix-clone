@@ -109,7 +109,7 @@ function PrivacyPolicy() {
 		 다음의 개인정보 항목을 처리하고 있습니다.</p>
 	<p className="pb-2 pt-2">1&lt;홈페이지 회원가입 및 관리&gt;</p>
 	<ul className="list-disc pl-7">
-		<li>필수항목 : 비밀번호, 로그인ID, 이메일, 접속 IP 정보, 쿠키, 서비스 이용 기록, 접속 로그</li>
+		<li>필수항목 : 접속 IP 정보, 쿠키, 서비스 이용 기록, 접속 로그</li>
 	</ul>
 	<h2 className="pb-2 pt-12 text-xl font-bold">8. 개인정보의 파기</h2>
 	<p className="pb-2 pt-2">&lt;나우무비스&gt;( 원칙적으로 개인정보 처리목적이
