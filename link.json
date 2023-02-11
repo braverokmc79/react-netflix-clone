@@ -1,0 +1,15 @@
+{
+    "url" :[
+    {"noonoo" : "https://noonoo27.tv/search?sfl=common_title||season_title||tag_title&sop=and&stx="},     	
+    {"peekle" : "https://peekle.tv/?s="},
+    {"qooqootv" : "https://www10.qooqootv.top/bbs/board.php?bo_table=engmovie&sca=&sfl=wr_subject&stx="},
+    {"tvchak" : "https://tvchak.live/index.php/vod/search.html?wd="},
+    {"youtube" : "https://www.youtube.com/results?sp=mAEB&search_query="},
+    {"kugabox" : "https://kg23.kugabox.com/bbs/board.php?bo_table=movie&sca=&sfl=wr_subject&sop=or&stx="},
+    {"koreanz" : "https://a41.koreanz.xyz/bbs/search.php?srows=10&gr_id=&sfl=wr_subject&stx="},
+    {"sonagitv" : "https://v44.sonagitv.tv/?s="},
+    {"justlink" : "https://justlink.tv/search/"},
+    {"kokoa" : "https://kokoa.tv/?s="}
+    
+    ]
+}
