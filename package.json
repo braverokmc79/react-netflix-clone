@@ -1,6 +1,6 @@
 {
-  "name": "netflix",
-  "version": "0.1.0",
+  "name": "nowmovies",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://braverokmc79.github.io/netflix",
   "dependencies": {
