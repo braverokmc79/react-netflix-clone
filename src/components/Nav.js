@@ -35,7 +35,7 @@ const Nav = () => {
                 className='nav_avatar_mobile'   onClick={() => navigate("/")}  />
  
             <img
-                alt="Netflix logo"
+                alt="나우무비스 로고"
                 //src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/170px-Netflix_2015_logo.svg.png"
                 src={`${process.env.PUBLIC_URL}/img/Now_Logo.png`}
                 className='nav_logo'
