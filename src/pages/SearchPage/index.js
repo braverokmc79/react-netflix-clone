@@ -45,7 +45,7 @@ function SearchPage() {
       setSearchResults(request.data.results);
       setTimeout(()=>{
         setLoading(false);
-       },300);
+       },1000);
 
      }catch(error){
         console.log("error", error);
@@ -84,7 +84,6 @@ function SearchPage() {
               찾고자하는 검색어 "{debounceTerm}"에 맞는 영화가 없습니다.
           </p>
           </div>
-
       </section>
 
        

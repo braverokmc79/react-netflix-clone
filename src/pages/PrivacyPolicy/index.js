@@ -30,8 +30,7 @@ function PrivacyPolicy() {
 		등을 목적으로 개인정보를 처리합니다.</p>
 	<h2 className="pb-2 pt-12 text-xl font-bold">2. 개인정보 파일 현황</h2>
 	<ul className="list-disc pl-7">
-		<li>개인정보 항목 : 비밀번호, 로그인ID, 이름, 이메일, 접속 IP 정보, 쿠키, 서비스 이용 기록, 접속
-			로그</li>
+		<li>개인정보 항목 : 개인정보를 수집하고 있지 않습니다.</li>
 		<li>수집방법 : 홈페이지</li>
 		<li>보유근거 : 개인정보처리방침</li>
 		<li>보유기간 : 3년</li>
