@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import requests from '../../api/requests'
 import Banner from '../../components/Banner'
 import Loading from '../../components/Loading';

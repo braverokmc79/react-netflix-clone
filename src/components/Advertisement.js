@@ -15,13 +15,11 @@ const Iframe = styled.iframe`
 
 function Advertisement({w, h}) {
   return (
-    
-               
+             <>
                <Iframe src="https://ads-partners.coupang.com/widgets.html?id=638929&template=carousel&trackingCode=AF2176654&subId=&width=200&height=150" 
-                className='advertisement'    
-               style={{width:w , height:h}}
+                className='advertisement'  style={{width:w , height:h}} 
                frameborder="0" scrolling="no" referrerpolicy="unsafe-url"></Iframe>
-    
+             </>
   )
 }
 

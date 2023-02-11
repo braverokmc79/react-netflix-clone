@@ -16,15 +16,13 @@ import Https from './pages/SubPages/Https';
 const Layout =()=>{
   return(
     <div>
-       <Nav />
-    
-     <NavMenu />
+        <Nav />
+       <NavMenu />
       
-
-       <Outlet />
-
+       <Outlet /> 
+        
        <Footer />
-       <ScrollTop />
+       <ScrollTop /> 
     </div>
   )
 }
@@ -44,11 +42,11 @@ function App() {
            <Route index element={<MainPage />} />
            <Route path="search" element={<SearchPage />} />
            <Route path="/movie/:movieId" element={<DetailPage />} />
-           <Route path="termsofService" element={<TermsofService />} />
+           <Route path="termsofService" element={<TermsofService />} />*/}
            <Route path="accessBlocked" element={<AccessBlocked />} />
            <Route path="privacyPolicy" element={<PrivacyPolicy />} />
            <Route path="subPages/chrome" element={<Chrome />} />
-           <Route path="subPages/https" element={<Https />} />
+           <Route path="subPages/https" element={<Https />} /> 
         </Route>
       </Routes>
     </div>  
