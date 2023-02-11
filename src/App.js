@@ -42,7 +42,7 @@ function App() {
            <Route index element={<MainPage />} />
            <Route path="search" element={<SearchPage />} />
            <Route path="/movie/:movieId" element={<DetailPage />} />
-           <Route path="termsofService" element={<TermsofService />} />*/}
+           <Route path="termsofService" element={<TermsofService />} />
            <Route path="accessBlocked" element={<AccessBlocked />} />
            <Route path="privacyPolicy" element={<PrivacyPolicy />} />
            <Route path="subPages/chrome" element={<Chrome />} />
