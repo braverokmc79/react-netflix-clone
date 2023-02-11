@@ -38,15 +38,15 @@ function App() {
   }
   
   //우클릭 차단
-  //   useEffect(() => {
-  //     const handleContextmenu = e => {
-  //         e.preventDefault()
-  //     }
-  //     document.addEventListener('contextmenu', handleContextmenu)
-  //     return function cleanup() {
-  //         document.removeEventListener('contextmenu', handleContextmenu)
-  //     }
-  // }, [ ]);
+    useEffect(() => {
+      const handleContextmenu = e => {
+          e.preventDefault()
+      }
+      document.addEventListener('contextmenu', handleContextmenu)
+      return function cleanup() {
+          document.removeEventListener('contextmenu', handleContextmenu)
+      }
+  }, [ ]);
 
 
   return (
