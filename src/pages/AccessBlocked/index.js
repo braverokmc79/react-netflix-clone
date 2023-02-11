@@ -40,7 +40,7 @@ function AccessBlocked() {
 			href="https://getunicorn.app/ko/product/unicorn-https/windows"
 			target="_blank" aria-label="원본 이미지 보기"><img className='img1'
 			src="//ac2-p2.namu.la/20221214sac2/bee2dc4aed0def5527bf3e504ffd2dfb50c088d8a0ba0cc105d581a53739a030.png"
-			 loading="lazy" /></a>
+			  /></a>
 	</p>
 	<p>
 		<br/>
@@ -73,11 +73,11 @@ function AccessBlocked() {
 	</p>
 	<p>
 		<a
-			href="//ac2-p2.namu.la/20221214sac2/813bb9f13bb75467958a1832972bee9f20479d2323a82f20168512cc72d5cc97.jpg?type=orig"
+			href="//ac2-p2.namu.la/20221214sac2/813bb9f13bb75467958a1832972bee9f20479d2323a82f20168512cc72d5cc97.jpg"
 			target="_blank" aria-label="원본 이미지 보기">
 		<img className='img2'
 			src="//ac2-p2.namu.la/20221214sac2/813bb9f13bb75467958a1832972bee9f20479d2323a82f20168512cc72d5cc97.jpg"
-			loading="lazy" /></a>
+			 /></a>
 	</p>
 	<p>
 		<br/>

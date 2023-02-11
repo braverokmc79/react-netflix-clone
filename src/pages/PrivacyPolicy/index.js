@@ -77,7 +77,7 @@ function PrivacyPolicy() {
 		<li>제공받는 자의 보유.이용기간: 준영구</li>
 	</ul>
 	<h2 className="pb-2 pt-12 text-xl font-bold">5. 개인정보처리 위탁</h2>
-	<p className="pb-2 pt-2">① &lt;나우무비스&gt;( 원활한 개인정보 업무처리를
+	<p className="pb-2 pt-2">① &lt;나우무비스&gt; 원활한 개인정보 업무처리를
 		위하여 다음과 같이 개인정보 처리업무를 위탁하고 있습니다.</p>
 	<p className="pb-2 pt-2">② &lt;나우무비스&gt;
 		 위탁계약 체결시 개인정보 보호법 제25조에 따라 위탁업무 수행목적 외 개인정보 처리금지, 기술적·관리적
@@ -112,7 +112,7 @@ function PrivacyPolicy() {
 		<li>필수항목 : 접속 IP 정보, 쿠키, 서비스 이용 기록, 접속 로그</li>
 	</ul>
 	<h2 className="pb-2 pt-12 text-xl font-bold">8. 개인정보의 파기</h2>
-	<p className="pb-2 pt-2">&lt;나우무비스&gt;( 원칙적으로 개인정보 처리목적이
+	<p className="pb-2 pt-2">&lt;나우무비스&gt; 원칙적으로 개인정보 처리목적이
 		달성된 경우에는 지체없이 해당 개인정보를 파기합니다. 파기의 절차, 기한 및 방법은 다음과 같습니다.</p>
 	<ul className="list-disc pl-7">
 		<li>파기절차</li>
